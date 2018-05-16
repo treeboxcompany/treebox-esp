@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="885px" height="74px" viewBox="0 0 885 74" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>treebox-metodologia-pasos</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="281" y="305" width="140" height="30" rx="6"></rect>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="140" height="30" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <rect id="path-3" x="592" y="305" width="194" height="30" rx="6"></rect>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="194" height="30" fill="white">
+            <use xlink:href="#path-3"></use>
+        </mask>
+        <rect id="path-5" x="428" y="305" width="157" height="30" rx="6"></rect>
+        <mask id="mask-6" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="157" height="30" fill="white">
+            <use xlink:href="#path-5"></use>
+        </mask>
+        <rect id="path-7" x="793" y="305" width="369" height="30" rx="6"></rect>
+        <mask id="mask-8" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="369" height="30" fill="white">
+            <use xlink:href="#path-7"></use>
+        </mask>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-277.000000, -284.000000)">
+            <use id="Rectangle" stroke="#000000" mask="url(#mask-2)" stroke-width="6" xlink:href="#path-1"></use>
+            <text id="Investigación" font-family="Avenir-Heavy, Avenir" font-size="15" font-weight="600" letter-spacing="-0.59523809" fill="#000000">
+                <tspan x="309" y="324">Investigación</tspan>
+            </text>
+            <use id="Rectangle" stroke="#000000" mask="url(#mask-4)" stroke-width="6" xlink:href="#path-3"></use>
+            <text id="UX/UI" font-family="Avenir-Heavy, Avenir" font-size="15" font-weight="600" letter-spacing="-0.59523809" fill="#000000">
+                <tspan x="670" y="325">UX/UI</tspan>
+            </text>
+            <use id="Rectangle" stroke="#000000" mask="url(#mask-6)" stroke-width="6" fill="#8AE3AB" xlink:href="#path-5"></use>
+            <use id="Rectangle" stroke="#000000" mask="url(#mask-8)" stroke-width="6" xlink:href="#path-7"></use>
+            <text id="Desarrollo" font-family="Avenir-Heavy, Avenir" font-size="15" font-weight="600" letter-spacing="-0.59523809" fill="#000000">
+                <tspan x="944" y="324">Desarrollo</tspan>
+            </text>
+            <text id="Sprint-de-diseño" font-family="Avenir-Heavy, Avenir" font-size="15" font-weight="600" letter-spacing="-0.59523809" fill="#FFFFFF">
+                <tspan x="453" y="325">Sprint de diseño</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

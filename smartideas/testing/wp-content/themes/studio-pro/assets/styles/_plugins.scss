@@ -1,0 +1,190 @@
+/* ## Simple Social Icons
+--------------------------------------------- */
+
+.simple-social-icons {
+    overflow: hidden;
+    svg {
+        &[class^="social-"],
+        &[class*=" social-"] {
+            display: inline-block;
+            width: 1em;
+            height: 1em;
+            stroke-width: 0;
+            stroke: currentColor;
+            fill: currentColor;
+        }
+    }
+    ul {
+        margin: -0.5em -0.5em 0 0;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        li {
+            background: none;
+            border: none;
+            list-style-type: none;
+            margin: 0.5em 0.5em 0 0;
+            padding: 0;
+            a {
+                border: none;
+                -moz-box-sizing: content-box;
+                -webkit-box-sizing: content-box;
+                box-sizing: content-box;
+                display: inline-block;
+                font-style: normal;
+                font-variant: normal;
+                font-weight: normal;
+                height: 1em;
+                line-height: 1em;
+                text-align: center;
+                text-decoration: none;
+                text-transform: none;
+                width: 1em;
+            }
+        }
+        &.aligncenter {
+            justify-content: center;
+        }
+        &.alignleft {
+            justify-content: flex-start;
+        }
+        &.alignright {
+            justify-content: flex-end;
+        }
+    }
+}
+
+/* ## Display Posts Shortcode
+--------------------------------------------- */
+
+.listing-item {
+    a {
+        display: block;
+    }
+    img {
+        width: 100%;
+    }
+    .display-posts-listing & {
+        padding: 0;
+        margin-bottom: $margin;
+    }
+    @include breakpoint(xs) {
+        width: 50%;
+    }
+    @include breakpoint(sm) {
+        &.one-half,
+        &.one-third,
+        &.one-fourth,
+        &.one-sixth,
+        &.two-thirds,
+        &.two-fourths,
+        &.two-sixths,
+        &.three-fourths,
+        &.three-sixths,
+        &.four-sixths,
+        &.five-sixths {
+            margin: 0;
+        }
+        &.one-half,
+        &.three-sixths,
+        &.two-fourths {
+            width: 50%;
+        }
+        &.one-third,
+        &.two-sixths {
+            width: 33.33333333333333%;
+        }
+        &.four-sixths,
+        &.two-thirds {
+            width: 66.66666666666666%;
+        }
+        &.one-fourth {
+            width: 25%;
+        }
+        &.three-fourths {
+            width: 75%;
+        }
+        &.one-sixth {
+            width: 16.666666666666667%;
+        }
+        &.five-sixths {
+            width: 83.333333333333333%;
+        }
+    }
+}
+
+
+/* ## Genesis Testimonial Slider
+--------------------------------------------- */
+
+.lSSlideOuter {
+    .testimonials-list {
+        img {
+            width: 6rem;
+            margin: 0 auto 2rem;
+            box-shadow: 0 1.5rem 1.5rem 0 rgba($dark,0.3);
+        }
+        blockquote {
+            margin-top: 0;
+            border: 0;
+            font-size: 1.8rem;
+            @include breakpoint(sm) {
+                padding: 0 2.5em;
+            }
+        }
+    }
+    .gts-rating {
+        margin-bottom: 1rem;
+    }
+    .lSPager.lSpg {
+        > li {
+            padding: 0 6px;
+            a {
+                background-color: rgba($white,0.5);
+            }
+            &.active {
+                a {
+                    background-color: $white;
+                    transform: scale(1.2);
+                }
+            }
+        }
+    }
+}
+
+
+/* ## Genesis Simple FAQs
+--------------------------------------------- */
+
+div.gs-faq {
+    background-color: $white;
+    border: $site-border;
+    border-radius: $site-radius;
+    box-shadow: 0 1.5rem 3rem -1rem rgba($dark,0.1);
+    padding: 0;
+    button {
+        background-color: transparent;
+        color: $dark;
+        font-weight: normal;
+        box-shadow: none;
+        padding: 2rem;
+        border-bottom: 1px solid $border;
+        border-radius: 0;
+        margin: 0;
+        &:last-of-type {
+            border-bottom: 0;
+            &.gs-faq--expanded {
+                border-bottom: 1px solid $border;
+            }
+        }
+    }
+    
+    .gs-faq__answer {
+        padding: 2rem;
+        border-bottom: 1px solid $border;
+        &:last-of-type {
+            border-bottom: 0;
+        }
+    }
+}

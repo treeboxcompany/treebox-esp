@@ -1,0 +1,169 @@
+# Translation of Plugins - Genesis Portfolio Pro - Stable (latest release) in Spanish (Spain)
+# This file is distributed under the same license as the Plugins - Genesis Portfolio Pro - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2018-01-24 10:38:58+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: es\n"
+"Project-Id-Version: Plugins - Genesis Portfolio Pro - Stable (latest release)\n"
+
+#. Author URI of the plugin/theme
+msgid "http://www.studiopress.com"
+msgstr "http://www.studiopress.com"
+
+#. Author of the plugin/theme
+msgid "StudioPress"
+msgstr "StudioPress"
+
+#: lib/classes/class.Genesis_Portolio_Archive_Settings.php:73
+msgid " portfolio items"
+msgstr "Elementos del portfolio"
+
+#: lib/classes/class.Genesis_Portolio_Archive_Settings.php:72
+msgid "Archives show at most"
+msgstr "Máximo de archivos mostrados"
+
+#: lib/classes/class.Genesis_Portolio_Archive_Settings.php:37
+msgid "Items Per Page"
+msgstr "Elementos por página"
+
+#. Description of the plugin/theme
+msgid "Adds default portfolio to any Genesis HTML5 theme."
+msgstr "Añade por defecto un portfolio a cualquier tema Genesis con soporte HTML5"
+
+#. Plugin Name of the plugin/theme
+msgid "Genesis Portfolio Pro"
+msgstr "Genesis Portfolio Pro"
+
+#: lib/post-types-and-taxonomies.php:66
+msgctxt "portfolio slug"
+msgid "portfolio"
+msgstr "portfolio"
+
+#: lib/post-types-and-taxonomies.php:60
+msgid "No Portfolio Items found in Trash."
+msgstr "No hay elementos del portfolio en la papelera."
+
+#: lib/post-types-and-taxonomies.php:59
+msgid "No Portfolio Items found."
+msgstr "No se han encontrado elementos del portfolio. "
+
+#: lib/post-types-and-taxonomies.php:58
+msgid "Parent Portfolio Items:"
+msgstr "Elementos de portfolio padre:"
+
+#: lib/post-types-and-taxonomies.php:57
+msgid "Search Portfolio Items"
+msgstr "Buscar elementos del portfolio"
+
+#: lib/post-types-and-taxonomies.php:56
+msgid "All Portfolio Items"
+msgstr "Todos los elementos del portfolio"
+
+#: lib/post-types-and-taxonomies.php:55
+msgid "View Portfolio Item"
+msgstr "Ver elemento de portfolio"
+
+#: lib/post-types-and-taxonomies.php:54
+msgid "Edit Portfolio Item"
+msgstr "Editar elemento del portfolio"
+
+#: lib/post-types-and-taxonomies.php:53
+msgid "New Portfolio Item"
+msgstr "Nuevo elemento de Portfolio"
+
+#: lib/post-types-and-taxonomies.php:52
+msgid "Add New Portfolio Item"
+msgstr "Añadir nuevo elemento  de Portfolio"
+
+#: lib/post-types-and-taxonomies.php:51
+msgctxt "Portfolio Item"
+msgid "Add New"
+msgstr "Añadir nuevo"
+
+#: lib/post-types-and-taxonomies.php:50
+msgctxt "add new on admin bar"
+msgid "Portfolio Item"
+msgstr "Elemento del portfolio"
+
+#: lib/post-types-and-taxonomies.php:49
+msgctxt "admin menu"
+msgid "Portfolio Items"
+msgstr "Elementos del portfolio"
+
+#: lib/post-types-and-taxonomies.php:48
+msgctxt "post type singular name"
+msgid "Portfolio Item"
+msgstr "Elemento del portfolio"
+
+#: lib/post-types-and-taxonomies.php:47
+msgctxt "post type general name"
+msgid "Portfolio Items"
+msgstr "Elementos del portfolio"
+
+#: lib/post-types-and-taxonomies.php:37
+msgctxt "portfolio-type slug"
+msgid "portfolio-type"
+msgstr "tipo-portfolio"
+
+#: lib/post-types-and-taxonomies.php:30
+msgid "Portfolio Types"
+msgstr "Tipos de portfolios"
+
+#: lib/post-types-and-taxonomies.php:29
+msgid "No Portfolio Types found."
+msgstr "No se han encontrado tipos de portfolio."
+
+#: lib/post-types-and-taxonomies.php:28
+msgid "Choose from the most used Portfolio Types"
+msgstr "Elije entre los más usados tipos de portfolio"
+
+#: lib/post-types-and-taxonomies.php:27
+msgid "Add or remove Portfolio Types"
+msgstr "añade o borra tipos de portfolio"
+
+#: lib/post-types-and-taxonomies.php:26
+msgid "Separate Portfolio Types with commas"
+msgstr "separa los tipos de portfolio con comas"
+
+#: lib/post-types-and-taxonomies.php:25
+msgid "New Portfolio Type Name"
+msgstr "Nombre del nuevo tipo de portfolio"
+
+#: lib/post-types-and-taxonomies.php:24
+msgid "Add New Portfolio Type"
+msgstr "Añade un nuevo tipo de portfolio"
+
+#: lib/post-types-and-taxonomies.php:23
+msgid "Update Portfolio Type"
+msgstr "Actualizar tipo de portfolio"
+
+#: lib/post-types-and-taxonomies.php:22
+msgid "Edit Portfolio Type"
+msgstr "Editar tipo de portfolio"
+
+#: lib/post-types-and-taxonomies.php:21
+msgid "All Types"
+msgstr "Todos los tipos"
+
+#: lib/post-types-and-taxonomies.php:20
+msgid "Popular Portfolio Types"
+msgstr "Tipos de portfolio populares"
+
+#: lib/post-types-and-taxonomies.php:19
+msgid "Search Portfolio Types"
+msgstr "Buscar tipos de portfolio"
+
+#: lib/post-types-and-taxonomies.php:18
+msgctxt "taxonomy singular name"
+msgid "Portfolio Type"
+msgstr "Tipo de portfolio"
+
+#: lib/post-types-and-taxonomies.php:17
+msgctxt "taxonomy general name"
+msgid "Portfolio Types"
+msgstr "Tipos de portfolio"

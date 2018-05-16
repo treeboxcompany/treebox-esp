@@ -1,0 +1,64 @@
+/* ## Widgets
+--------------------------------------------- */
+
+.widget {
+    word-wrap: break-word;
+    .sidebar & {
+		font-size: 1.6rem;
+        padding: 6vw 3vw;
+        background-color: $white;
+        @include breakpoint(sm) {
+            padding: 4rem 4rem 0 0;
+        }
+        &:first-of-type {
+            @include breakpoint(md) {
+                margin-top: 0;
+            }
+        }
+        &:last-of-type {
+            margin-bottom: 0;
+            @include breakpoint(md) {
+                margin-bottom: 4rem;
+            }
+        }
+        p {
+            &:last-of-type {
+               margin-bottom: 0;
+           }
+       }
+       li {
+        margin-bottom: 0.5em;
+        padding-bottom: 0.5em;
+            &:last-of-type {
+                margin-bottom: 0;
+                padding-bottom: 0;
+            }
+            li {
+                border: 0;
+                margin: 0 0 0 1em;
+                padding: 0;
+            }
+        }
+        ol li {
+            list-style-position: inside;
+            list-style-type: decimal;
+            padding-left: 1em;
+            text-indent: -1em;
+        }
+    }
+}
+
+.widget-title {
+    font-family: $font-heading;
+    font-size: 2rem;
+}
+
+.widget_calendar {
+    table {
+        width: 100%;
+    }
+    td,
+    th {
+        text-align: center;
+    }
+}

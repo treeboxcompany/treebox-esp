@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="106px" height="15px" viewBox="0 0 106 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>zig-zag</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="zig-zag" fill-rule="nonzero" fill="#000000">
+            <path d="M15.4,14 C15,14 14.5,13.9 14.2,13.6 L1.7,3.6 C0.8,2.9 0.7,1.7 1.4,0.8 C2.1,-0.1 3.3,-0.2 4.2,0.5 L15.5,9.5 L26.8,0.5 C27.5,-0.1 28.6,-0.1 29.3,0.5 L40.6,9.5 L51.9,0.5 C52.6,-0.1 53.7,-0.1 54.4,0.5 L65.7,9.5 L77,0.5 C77.7,-0.1 78.8,-0.1 79.5,0.5 L90.8,9.5 L102.1,0.5 C103,-0.2 104.2,-3.93921007e-14 104.9,0.8 C105.6,1.7 105.4,2.9 104.6,3.6 L92.1,13.6 C91.4,14.2 90.3,14.2 89.6,13.6 L78.3,4.6 L67,13.6 C66.3,14.2 65.2,14.2 64.5,13.6 L53.2,4.6 L41.9,13.6 C41.2,14.2 40.1,14.2 39.4,13.6 L28.1,4.6 L16.8,13.6 C16.3,13.8 15.8,14 15.4,14 Z" id="Shape"></path>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,312 @@
+/* ## Front Page
+--------------------------------------------- */
+
+.front-page-1,
+.front-page-2,
+.front-page-3,
+.front-page-4,
+.front-page-5,
+.front-page-6 {
+    width: 100%;
+    padding: 6rem 0;
+    background-color: $white;
+    border-bottom: $site-border;
+    @include breakpoint(sm) {
+        padding: 12rem 0;
+    }
+    .wrap {
+        @include breakpoint(sm) {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+    .widget {
+        @include breakpoint(sm) {
+            margin-bottom: 0;
+        }
+    }
+    .widget-title {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 5rem;
+        font-size: 1.618em;
+    }
+}
+
+.front-page-1 {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    position: relative;
+    border-bottom: 0;
+    color: $white;
+    z-index: 1;
+    @include clearfix;
+    @include breakpoint(sm) {
+        padding: calc(22vh + 9rem) 0 22vh;
+    }
+    @include breakpoint(md) {
+        padding: calc(22vh + 9rem) 0 22vh;
+    }
+    @include breakpoint(lg) {
+        padding: calc(22vh + 9rem) 0 22vh;
+    }
+    .wrap {
+        position: relative;
+        text-align: center;
+        @include breakpoint(md) {
+            max-width: map-get($breakpoints, sm);
+        }
+    }
+    .widget {
+        margin: 0 auto;
+        &:last-of-type {
+            margin-bottom: 1rem; // For heading line height.
+        }
+        p:last-of-type {
+            margin-bottom: 2em;
+        }
+    }
+    h1 {
+        margin: 0 0 0.382em;
+        line-height: 1.236;
+    }
+}
+
+.front-page-2 {
+    .widget {
+        flex: 1;
+        padding: 0 2rem 2rem;
+        font-size: 1.6rem;
+    }
+    .widget-title {
+        font-size: 1.5em;
+        margin: 0.5rem auto 1rem;
+    }
+    p:last-of-type {
+        margin-bottom: 0;
+    }
+}
+
+.front-page-3 {
+    background-color: $light;
+    text-align: center;
+    @include breakpoint(sm) {
+        padding-bottom: 12rem;
+    }
+    .widget {
+        margin-bottom: 0;
+        width: 100%;
+    }
+    .widget-title {
+        margin-bottom: 4rem;
+        &:after {
+            content: '';
+            display: block;
+            height: 1px;
+            width: 6rem;
+            background-color: $gray;
+            margin: 2rem auto 0;
+        }
+    }
+    p {
+        font-size: 1.6rem;
+        @include clearfix;
+    }
+    .display-posts-listing {
+        width: 100%;
+        margin: 0 0 5rem;
+        @include clearfix;
+    }
+    .listing-item {
+        position: relative;
+        width: 50%;
+        margin: 0;
+        float: right;
+        @include breakpoint(sm) {
+            width: 25%;
+        }
+        &:first-of-type {
+            float: left;
+            width: 100%;
+            @include breakpoint(sm) {
+                width: 50%;
+            }
+        }
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+        &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            box-shadow: inset 0 0 0 1rem $light;
+            z-index: 2;
+            pointer-events: none;
+        }
+        &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 1rem;
+            left: 1rem;
+            right: 1rem;
+            bottom: 1rem;
+            box-shadow: 0 0 2rem rgba($dark,0);
+            z-index: 3;
+            pointer-events: none;
+            @include transition;
+        }
+        &:hover {
+            .title {
+                opacity: 1;
+                top: 0;
+            }
+            &:after {
+                box-shadow: 0 3rem 2rem -1rem rgba($dark,0.15), inset 0 0 0 100rem rgba($dark,0.3);
+            }
+        }
+    }
+    .title {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 100%;
+        text-decoration: none;
+        font-family: $font-heading;
+        font-size: 1.8rem;
+        color: $white;
+        opacity: 0;
+        z-index: 4;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include transition;
+    }
+}
+
+.front-page-4 {
+    color: $white;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    background-color: transparent;
+    @include overlay;
+    .widget {
+        position: relative;
+        z-index: 2;
+        width: 100%;
+    }
+    .widget_media_image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        overflow: hidden;
+        margin: 0;
+        z-index: -1;
+        .widget-wrap {
+            height: 100%;
+        }
+        img {
+            height: 100% !important;
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+    p {
+        max-width: map-get($breakpoints,sm);
+        margin: 0 auto 1.382em;
+    }
+}
+
+.front-page-5 {
+    text-align: center;
+    .widget {
+        margin: 0 auto;
+        max-width: map-get($breakpoints,md);
+        @include breakpoint(sm) {
+            margin: 0 auto;
+        }
+    }
+    h3 {
+        line-height: 1.618;
+        margin-bottom: 0;
+    }
+}
+
+.front-page-6 {
+    background-color: $light;
+    .widget-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        @include breakpoint(sm) {
+            padding: 0 5vw;
+        }
+    }
+    .widget-title {
+        &:after {
+            content: '';
+            display: block;
+            height: 1px;
+            width: 6rem;
+            background-color: $gray;
+            margin: 2rem auto 0;
+        }
+    }
+    .entry {
+        padding: 3rem;
+        box-shadow: 0 1rem 2rem -1rem rgba($dark,0);
+        border: $site-border;
+        @include transition;
+        @include breakpoint(sm) {
+            width: $one-third;
+            margin-left: $margin;
+            margin-bottom: $margin;
+        }
+        @include breakpoint(lg) {
+            width: $one-third - $margin;
+            margin-left: $margin * 2;
+        }
+        &:hover {
+            box-shadow: 0 3rem 2rem -1rem rgba($dark,0.1);
+        }
+        &:first-of-type {
+            margin-left: 0;
+        }
+        >a {
+            margin: -3rem -3rem 3rem;
+            width: calc(100% + 6rem);
+            max-width: calc(100% + 6rem);
+            display: block;
+            float: none;
+        }
+        p {
+            font-size: 1.6rem;
+            display: flex;
+            flex-wrap: wrap;
+            a {
+                text-decoration: none;
+                margin-top: 1rem;
+                font-weight: $bold;
+            }
+        }
+        img {
+            width: 100%;
+        }
+        .entry-meta {
+            font-size: 0.618em;
+        }
+    }
+    .entry-title {
+        font-size: 1.1em;
+    }
+}

@@ -1,0 +1,144 @@
+/* ## Site Footer
+--------------------------------------------- */
+
+.site-footer {
+    width: 100%;
+    font-size: 1.8rem;
+    background-color: $white;
+    > .wrap {
+        margin: 0 auto;
+        padding: 5vw;
+        text-align: center;
+        position: relative;
+        border-top: $site-border;
+        font-family: $font-heading;
+        font-style: italic;
+        font-size: 1.4rem;
+        color: $gray;
+        @include breakpoint(sm) {
+            width: 90%;
+            max-width: map-get($breakpoints, xl);
+            padding: 5rem 0;
+        }
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+        a {
+            color: $gray;
+        }
+        p {
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+        }
+    }
+    .widget-area {
+        @include breakpoint(sm) {
+            margin-bottom: 0;
+        }
+    }
+}
+
+
+/* ## Before Footer
+--------------------------------------------- */
+
+.before-footer {
+    padding: 10rem 0;
+    color: $white;
+    position: relative;
+    text-align: center;
+    @include overlay;
+    .widget-title {
+        font-size: 2em;
+    }
+    .widget {
+        z-index: 1;
+        width: 100%;
+        position: relative;
+    }
+    .widget_media_image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        overflow: hidden;
+        margin: 0;
+        z-index: 0;
+        .widget-wrap {
+            height: 100%;
+        }
+        img {
+            height: 100% !important;
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+    p {
+        max-width: map-get($breakpoints,sm);
+        margin: 0 auto 1.382em;
+    }
+}
+
+/* ## Footer Widgets
+--------------------------------------------- */
+
+.footer-widgets {
+    padding: 6rem 0;
+    .wrap {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .widget-title {
+        margin-bottom: 1.2em;
+    }
+    .widget-area {
+        margin: 0 auto 2rem;
+        width: 100%;
+		@include breakpoint(sm) {
+			flex: 1;
+			margin-left: 2.564102564102564%;
+			&:first-of-type {
+				margin-left: 0;
+			}
+        }
+        &:first-of-type {
+            margin-left: 0;
+        }
+        &:last-of-type {
+            @include breakpoint(sm) {
+                flex: 1.618;
+            }
+        }
+        .widget {
+            width: 100%;
+            display: block;
+            margin: 0 auto 2em;
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+        }
+    }
+    .enews {
+        form {
+            position: relative;
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+        }
+        input[type="email"] {
+            margin-right: 1em;
+        }
+        input[type="submit"] {
+            padding: 1em;
+            font-weight: $bolder;
+            background-color: $accent;
+            box-shadow: 0 1.5rem 1.5rem rgba($dark,0.1);
+            &:hover {
+                box-shadow: 0 0.5rem 1rem rgba($dark,0.1);
+            }
+        }
+    }
+}

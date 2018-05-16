@@ -1,0 +1,85 @@
+
+---Downloaded files---
+The import files for: Demo Import were successfully downloaded!
+Initial max execution time = 30
+Files info:
+Site URL = https://smartideas.treebox.co/corp
+Data file = /home/treeboxc/public_html/smartideas/corp/wp-content/themes/business-pro-theme/sample.xml
+Widget file = /home/treeboxc/public_html/smartideas/corp/wp-content/themes/business-pro-theme/widgets.wie
+Customizer file = /home/treeboxc/public_html/smartideas/corp/wp-content/themes/business-pro-theme/customizer.dat
+Redux files:
+not defined!
+
+------
+New AJAX call!
+
+
+---Importing widgets---
+Header Right : 
+
+Simple Social Icons - No Title - Imported
+
+Primary Sidebar : 
+
+Buscar - No Title - Widget already exists
+Entradas recientes - No Title - Widget already exists
+Simple Social Icons - Follow - Imported
+
+Front Page 1 : 
+
+HTML personalizado - Create your website with Business Pro - Imported
+
+Front Page 2 : 
+
+Icon - Discovery - Imported
+Icon - Design - Imported
+Icon - Development - Imported
+
+Front Page 3 : 
+
+HTML personalizado - Services We Provide - Imported
+Genesis - Featured Page - No Title - Imported
+Genesis - Featured Page - No Title - Imported
+Genesis - Featured Page - No Title - Imported
+
+Front Page 4 : 
+
+Imagen - No Title - Imported
+HTML personalizado - No Title - Imported
+Vídeo - No Title - Imported
+
+Front Page 5 : 
+
+HTML personalizado - Our Latest Work - Imported
+
+Front Page 6 : 
+
+Testimonials - No Title - Imported
+
+Before Footer : 
+
+Imagen - No Title - Imported
+HTML personalizado - Let&#039;s work together - Imported
+HTML personalizado - No Title - Imported
+
+Footer 1 : 
+
+HTML personalizado - Social - Imported
+Simple Social Icons - No Title - Imported
+
+Footer 2 : 
+
+Tarjeta de Contacto - Contact - Imported
+
+Footer 3 : 
+
+Menú de Navegación - Navigation - Imported
+
+Footer 4 : 
+
+Genesis - eNews Extended - Newsletter - Imported
+
+
+
+---Importing customizer settings---
+Customizer settings import finished!

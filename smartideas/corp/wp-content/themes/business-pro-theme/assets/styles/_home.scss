@@ -1,0 +1,478 @@
+/* ## Front Page
+--------------------------------------------- */
+
+.home {
+    .site-inner {
+        padding: 0;
+    }
+}
+
+.front-page-1,
+.front-page-2,
+.front-page-3,
+.front-page-4,
+.front-page-5,
+.front-page-6 {
+    background-color: $white;
+    padding: 8rem 0;
+    @include breakpoint(md) {
+        padding: 12rem 0;
+    }
+}
+
+
+/* ### Front Page 1 */
+
+.front-page-1 {
+    background-color: transparent;
+    background-size: cover !important;
+    background-position: center !important;
+    padding: 0;
+    height: 90vh;
+    position: relative;
+    color: $white;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    @include clearfix;
+    @include breakpoint(xl) {
+        height: 80vh;
+    }
+    .wrap {
+        position: relative;
+        z-index: 2;
+    }
+    .widget {
+        @include breakpoint(sm) {
+            max-width: map-get($breakpoints, sm);
+            margin-left: auto;
+            margin-right: auto;
+        }
+        &:first-of-type {
+            padding-top: 5vh;
+        }
+        .widget-wrap {
+            p {
+                color: $border;
+                margin-bottom: 1.618em;
+            }
+        }
+    }
+    h1 {
+        @include breakpoint(xs) {
+            font-size: 2.2em;
+        }
+        @include breakpoint(sm) {
+            font-size: 2.7em;
+        }
+        @include breakpoint(xl) {
+            font-size: 3.5em;
+        }
+    }
+}
+
+
+/* ### Front Page 2 */
+
+.front-page-2 {
+    text-align: center;
+    .fa-coffee {
+        margin-left: -1.5rem; // Lineawesome fix.
+    }
+    .widget-title {
+        font-size: 2rem;
+        margin: 1rem auto;
+    }
+    p {
+        color: $gray;
+        display: block;
+        @include breakpoint(sm) {
+            padding: 0 1em;
+            font-size: 1.8rem;
+        }
+        &:last-of-type {
+            @include breakpoint(sm) {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+
+/* ### Front Page 3 */
+
+.front-page-3 {
+    background-color: $light;
+    .wrap {
+        flex-wrap: wrap;
+    }
+    .widget {
+        margin-bottom: 5vw;
+        @include breakpoint(sm) {
+            margin-bottom: $margin-left;
+        }
+        &:first-of-type {
+            margin-bottom: 5rem;
+        }
+    }
+    .widget_custom_html:first-of-type {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        hr {
+            display: block;
+            margin: 0 auto 4rem;
+            padding: 0;
+            height: 0.3rem;
+            width: 10rem;
+            border: 0;
+            background-color: $accent;
+        }
+        p {
+            color: $gray;
+        }
+    }
+    p {
+        color: $gray;
+    }
+    .entry {
+        max-width: 40rem;
+        padding: 0;
+        margin-left: auto;
+        margin-right: auto;
+        box-shadow: 0px 27px 40px -20px rgba($dark,0.11);
+        border-radius: $site-radius;
+        @include transition;
+        &:hover {
+            box-shadow: 0px 27px 40px -20px rgba($dark,0.22);
+        }
+        >a {
+            display: block;
+            margin: 0;
+            @include overlay;
+            &:before {
+                opacity: 0.1;
+            }
+            &:focus ~ .entry-header a {
+                color: $gray;
+            }
+        }
+        p {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+    .entry-title {
+        padding: 3rem 3rem 0;
+        font-size: 1.8rem;
+    }
+    .entry-content {
+        padding: 0 3rem 3rem;
+        font-size: 1.8rem;
+        color: $gray;
+    }
+    img {
+        min-width: 100%;
+        border-radius: $site-radius $site-radius 0 0;
+    }
+    .more-link {
+        display: block;
+        padding: 0.618em 1.618em;
+        font-size: 1.4rem;
+        font-family: $font-heading;
+        font-weight: $bolder;
+        margin-top: 1em;
+        width: auto;
+        background-color: $dark;
+        border-radius: $site-radius;
+        color: $white;
+        text-decoration: none;
+        box-shadow: 0px 27px 40px -20px rgba($dark,0.22);
+        @include transition;
+        &:hover {
+            box-shadow: 0px 27px 40px -20px rgba($dark,0.22);
+        }
+    }
+}
+
+
+/* ### Front Page 4 */
+
+.front-page-4 {
+    background-color: $dark;
+    position: relative;
+    overflow: hidden;
+    color: $white;
+    text-align: center;
+    padding: 10rem 0;
+    @include overlay;
+    @include breakpoint(md) {
+        padding: 20rem 0;
+    }
+    .wrap {
+        @include breakpoint(sm) {
+            display: block;
+        }
+    }
+    .widget {
+        max-width: 64rem;
+        margin: 0 auto;
+        @include breakpoint(md) {
+            margin: 0 auto;
+        }
+    }
+    .widget-wrap {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        position: relative;
+        z-index: 1;
+    } // Only apply to first image widget.
+    .widget_media_image:first-of-type {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 0;
+        margin: 0;
+        @include breakpoint(sm) {
+            max-width: 100%;
+        }
+        img {
+            object-fit: cover;
+            object-position: center;
+            width: 100% !important;
+            height: 100% !important;
+        }
+    }
+    .widget.widget_media_video {
+        @include center;
+        height: 100%;
+        position: fixed;
+        z-index: 998;
+        margin: auto;
+        max-width: 100%;
+        opacity: 0;
+        pointer-events: none;
+        visibility: hidden;
+        @include transition;
+        &.visible {
+            opacity: 1;
+            pointer-events: all;
+            visibility: visible;
+        }
+    }
+    .textwidget {
+        width: 100%;
+    }
+    .wp-video {
+        padding: 5%;
+        position: relative;
+        @include breakpoint(sm) {
+            padding: 10%;
+        }
+    }
+    iframe {
+        display: block;
+        height: 100% !important;
+        width: 100% !important;
+        box-shadow: 0 3rem 3rem -2rem rgba($dark, 0.5);
+    }
+    .show-video {
+        height: 3em;
+        width: 3em;
+        border-radius: 3em;
+        border: 3px solid $white;
+        margin: 0 auto 1em;
+        padding: 0;
+        color: $white;
+        background-color: transparent;
+        font-size: 2.4rem;
+        @include transition;
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+    .hide-video {
+        position: absolute;
+        z-index: 999;
+        top: -5%;
+        right: 0;
+        background: transparent;
+        padding: 1rem;
+        box-shadow: none;
+        font-size: 2em;
+        height: 1em;
+        width: 1em;
+        line-height: 0;
+        text-align: center;
+        border-radius: 9rem;
+        @include breakpoint(sm) {
+            top: 5%;
+            right: 5%;
+        }
+    }
+    .before {
+        position: fixed;
+        background-color: $overlay;
+        @include center;
+    }
+}
+
+
+/* ### Front Page 5 */
+
+.front-page-5 {
+    .widget_custom_html:first-of-type {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        hr {
+            display: block;
+            margin: 0 auto 4rem;
+            padding: 0;
+            height: 0.3rem;
+            width: 10rem;
+            border: 0;
+            background-color: $accent;
+        }
+        p {
+            color: $gray;
+        }
+    }
+    .widget_custom_html:nth-of-type(2) {
+        margin-left: 0;
+        flex: auto;
+    }
+    .display-posts-listing {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 5rem;
+        margin-bottom: -3rem;
+    }
+    .listing-item {
+        position: relative;
+        border-radius: $site-radius;
+        padding: 0;
+        margin-bottom: 3rem;
+        box-shadow: 0px 27px 40px -20px rgba($dark,0.22);
+        @include transition;
+        @include overlay;
+        @media (max-width: map-get($breakpoints, sm)) {
+            margin: 0 0 3rem $margin-left;
+            width: $one-half;
+            &:nth-of-type(2n + 1) {
+                margin-left: 0;
+            }
+        }
+        @media (max-width: map-get($breakpoints, xs)) {
+            width: 100%;
+            margin: 0 0 5%;
+        }
+        &:before {
+            opacity: 0.1;
+            border-radius: $site-radius;
+            @include transition;
+        }
+        &:hover {
+            box-shadow: 0px 27px 40px -20px rgba($dark,0.33);
+            &:before,
+            .title {
+                opacity: 1;
+            }
+        }
+        &:last-of-type {
+            margin-bottom: 3rem !important;
+        }
+    }
+    .image {
+        display: block;
+        height: 100%;
+        img {
+            border-radius: $site-radius;
+        }
+    }
+    .title {
+        font-family: $font-heading;
+        font-weight: $bolder;
+        position: absolute;
+        text-align: center;
+        display: block;
+        height: 1em;
+        line-height: 1em;
+        text-decoration: none;
+        z-index: 1;
+        color: $white;
+        opacity: 0;
+        @include transition;
+        @include center;
+    }
+}
+
+
+/* ### Front Page 6 */
+
+.front-page-6 {
+    background-color: $light;
+    .wrap {
+        @include breakpoint(md) {
+            display: block;
+        }
+    }
+    img {
+        width: 5rem;
+        margin-bottom: 1rem;
+    }
+    .lslide,
+    .clone {
+        padding: 1.5rem;
+        .wrap {
+            background-color: $white;
+            padding: 2em 2em 2.4em;
+            border-radius: $site-radius;
+            box-shadow: 0 2rem 2rem -1rem rgba($dark, 0.05);
+            @include clearfix;
+            @include transition;
+            &:hover {
+                box-shadow: 0 2rem 2rem -1rem rgba($dark, 0.1);
+            }
+        }
+    }
+    blockquote {
+        border: 0;
+        margin: 0 0 1.5rem;
+        padding: 0;
+    }
+    .gts-rating+blockquote {
+        margin-top: 0.5rem;
+    }
+    blockquote+img {
+        margin-bottom: 0;
+        float: left;
+    }
+    h5 {
+        font-size: 1.5rem;
+        margin: 0 1rem 1rem 0;
+        line-height: 1;
+        color: $gray;
+    }
+    img+h5 {
+        margin: 1.4rem 0.5rem 0 1rem;
+        +.gts-company {
+            margin-top: 1.4rem;
+        }
+    }
+    .gts-company {
+        font-size: 1.5rem;
+        display: block;
+        line-height: 1;
+    }
+    .lSSlideOuter {
+        margin: 0 -1.5rem;
+    }
+}

@@ -1,0 +1,222 @@
+# Translation of Plugins - Genesis Simple Share - Development (trunk) in Spanish (Spain)
+# This file is distributed under the same license as the Plugins - Genesis Simple Share - Development (trunk) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2018-04-23 21:36:09+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: es\n"
+"Project-Id-Version: Plugins - Genesis Simple Share - Development (trunk)\n"
+
+#. Author URI of the plugin/theme
+msgid "http://www.studiopress.com"
+msgstr "http://www.studiopress.com"
+
+#. Author of the plugin/theme
+msgid "StudioPress"
+msgstr "StudioPress"
+
+#: lib/post-meta.php:60
+msgid "The alternate URL is used in place of the default link. This is the URL that will be shared and checked for social shares."
+msgstr "La URL alternativa es usada en lugar del enlace por defecto. Esta es la URL que será compartida y comprobada a la hora de compartir en redes sociales."
+
+#: lib/post-meta.php:58
+msgid "Alternate URL"
+msgstr "URL alternativa"
+
+#: lib/front-end.php:273
+msgid "%s shares on StumbleUpon"
+msgstr "%s veces compartido en StumbleUpon"
+
+#: lib/front-end.php:272
+msgid "Share on StumbleUpon"
+msgstr "Compartido en StumbleUpon"
+
+#: lib/front-end.php:269
+msgid "%s shares on LinkedIn"
+msgstr "%s veces compartido en Linkedin"
+
+#: lib/front-end.php:268
+msgid "Share on LinkedIn"
+msgstr "Compartir en Linkedin"
+
+#: lib/front-end.php:257
+msgid "%s shares on Facebook"
+msgstr "%s veces compartido en Facebook"
+
+#: lib/front-end.php:253
+msgid "%s shares on Google Plus"
+msgstr "%s veces compartido en Google Plus"
+
+#: lib/front-end.php:252
+msgid "Share on Google Plus"
+msgstr "Compartir en Google Plus"
+
+#: lib/admin.php:463
+msgid "Hide Count"
+msgstr "Ocultar contador"
+
+#: lib/admin-icon-preview.php:180
+msgid "on %s"
+msgstr "en %s"
+
+#: lib/admin-icon-preview.php:179 lib/front-end.php:558
+msgid "Share"
+msgstr "Comparte"
+
+#: lib/admin-icon-preview.php:169 lib/front-end.php:548
+msgid "Tweet"
+msgstr "Tuitea"
+
+#: lib/front-end.php:261
+msgid "%s Tweets"
+msgstr "%s tuits"
+
+#: lib/front-end.php:260
+msgid "Tweet this"
+msgstr "Tuitea esto"
+
+#: lib/front-end.php:264
+msgid "Pin this"
+msgstr "Pinea esto"
+
+#: lib/front-end.php:265
+msgid "%s Pins"
+msgstr "%s pineos"
+
+#: lib/front-end.php:256
+msgid "Share on Facebook"
+msgstr "Compartir en Facebook"
+
+#: lib/admin-icon-preview.php:174 lib/front-end.php:553
+msgid "Pin"
+msgstr "Pinear"
+
+#. Plugin Name of the plugin/theme
+msgid "Genesis Simple Share"
+msgstr "Genesis Simple Share"
+
+#: lib/admin.php:449
+msgid "After the Content"
+msgstr "Después del contenido"
+
+#. Description of the plugin/theme
+msgid "A simple sharing plugin using the Share script."
+msgstr "Un plugin fácil de usar para compartir utilizando el script Share."
+
+#: lib/admin.php:520
+msgid "Enable on:"
+msgstr "Activar en:"
+
+#: lib/admin.php:450
+msgid "Before and After the Content"
+msgstr "Antes y después del contenido"
+
+#: lib/admin.php:448
+msgid "Before the Content"
+msgstr "Antes del contenido"
+
+#: lib/admin.php:446
+msgid "Icon Display Position"
+msgstr "Posición a mostrar del icono"
+
+#: lib/admin.php:415
+msgid "Enter Default Image URL if there is no image available in content being shared:"
+msgstr "Introduce la URL de imagen predeterminada si no hay ninguna imagen disponible en el contenido que se compartirá:"
+
+#: lib/admin.php:379
+msgid "Enter Twitter ID for @via to be added to default tweet text:"
+msgstr "Introduce el ID de Twitter que se agregará al texto de tweet predeterminado con @via:"
+
+#: lib/admin.php:342 lib/admin.php:359 lib/admin.php:376 lib/admin.php:397
+#: lib/admin.php:412 lib/admin.php:432
+msgid "Use this button?"
+msgstr "¿Utilizar este botón?"
+
+#: lib/admin.php:292
+msgid "Filled"
+msgstr "Rellenado"
+
+#: lib/admin.php:291
+msgid "Outlined"
+msgstr "Delineado"
+
+#: lib/admin.php:290
+msgid "Icon Appearance"
+msgstr "Aspecto del icono"
+
+#: lib/admin.php:287
+msgid "Box"
+msgstr "Caja"
+
+#: lib/admin.php:286
+msgid "Medium Bar"
+msgstr "Barra media"
+
+#: lib/admin.php:285
+msgid "Small Bar"
+msgstr "Barra pequeña"
+
+#: lib/admin.php:284
+msgid "Icon Size"
+msgstr "Tamaño de icono"
+
+#: lib/admin.php:257
+msgid "StumbleUpon"
+msgstr "StumbleUpon"
+
+#: lib/post-meta.php:55
+msgid "Disable Share Buttons"
+msgstr "Desactivar botones de compartir"
+
+#: lib/post-meta.php:36
+msgid "Share Settings"
+msgstr "Ajustes de compartir"
+
+#: lib/admin.php:527
+msgid "Show on Archive Pages"
+msgstr "Mostrar en páginas de archivo"
+
+#: lib/admin.php:447
+msgid "Select display position to enable icons."
+msgstr "Elige la posición de visualización para activar los iconos."
+
+#: lib/admin.php:254
+msgid "Twitter"
+msgstr "Twitter"
+
+#: lib/admin.php:253
+msgid "Facebook"
+msgstr "Facebook"
+
+#: lib/admin.php:252
+msgid "Google+"
+msgstr "Google+"
+
+#: lib/admin.php:256
+msgid "Linkedin"
+msgstr "Linkedin"
+
+#: lib/admin.php:255
+msgid "Pinterest"
+msgstr "Pinterest"
+
+#: lib/admin.php:66
+msgid "Simple Share"
+msgstr "Simple Share"
+
+#: lib/admin.php:40
+msgid "You can change button position by reordering these boxes:"
+msgstr "Puedes cambiar la posición del botón reordenando estas cajas:"
+
+#: lib/admin.php:65
+msgid "Genesis Simple Share Settings"
+msgstr "Ajustes de Genesis Simple Share"
+
+#: lib/admin-icon-preview.php:14 lib/admin.php:14 lib/functions.php:16
+#: plugin.php:19
+msgid "Sorry, you are not allowed to access this page directly."
+msgstr "Lo siento, no tienes permisos para acceder a esta página directamente."

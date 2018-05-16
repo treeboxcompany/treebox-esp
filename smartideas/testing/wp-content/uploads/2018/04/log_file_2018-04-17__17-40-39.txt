@@ -1,0 +1,82 @@
+
+---Downloaded files---
+The import files for: Demo Import were successfully downloaded!
+Initial max execution time = 30
+Files info:
+Site URL = https://smartideas.treebox.co/testing
+Data file = /home/treeboxc/public_html/smartideas/testing/wp-content/themes/studio-pro/sample.xml
+Widget file = /home/treeboxc/public_html/smartideas/testing/wp-content/themes/studio-pro/widgets.wie
+Customizer file = /home/treeboxc/public_html/smartideas/testing/wp-content/themes/studio-pro/customizer.dat
+Redux files:
+not defined!
+
+------
+New AJAX call!
+
+
+---Importing widgets---
+Header Right : 
+
+Simple Social Icons - No Title - Imported
+
+Primary Sidebar : 
+
+HTML personalizado - Primary Sidebar - Imported
+Buscar - No Title - Imported
+Nube de etiquetas - No Title - Imported
+Entradas recientes - No Title - Imported
+Simple Social Icons - No Title - Imported
+
+Front Page 1 : 
+
+HTML personalizado - Meet the new Studio Pro. - Imported
+
+Front Page 2 : 
+
+Icon - Customizable - Imported
+Icon - Optimized - Imported
+Icon - Responsive - Imported
+
+Front Page 3 : 
+
+HTML personalizado - Our latest work. - Imported
+
+Front Page 4 : 
+
+Imagen - No Title - Imported
+Testimonials - Happy customers. - Imported
+
+Front Page 5 : 
+
+HTML personalizado - No Title - Imported
+
+Front Page 6 : 
+
+Genesis - Featured Posts - Latest from the blog. - Imported
+
+Before Footer : 
+
+Imagen - No Title - Imported
+HTML personalizado - Create a stunning website with Studio Pro. - Imported
+
+Footer 1 : 
+
+Menú de Navegación - Contact - Imported
+
+Footer 2 : 
+
+Menú de Navegación - Navigation - Imported
+
+Footer 3 : 
+
+Menú de Navegación - Store - Imported
+
+Footer 4 : 
+
+Simple Social Icons - Follow us. - Imported
+Genesis - eNews Extended - Newsletter - Imported
+
+
+
+---Importing customizer settings---
+Customizer settings import finished!

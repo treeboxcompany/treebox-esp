@@ -1,0 +1,36 @@
+# Translation of Plugins - WP Featherlight &#8211; A Simple jQuery Lightbox - Stable (latest release) in Spanish (Spain)
+# This file is distributed under the same license as the Plugins - WP Featherlight &#8211; A Simple jQuery Lightbox - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2017-08-31 08:03:40+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: es\n"
+"Project-Id-Version: Plugins - WP Featherlight &#8211; A Simple jQuery Lightbox - Stable (latest release)\n"
+
+#. Author URI of the plugin/theme
+msgid "https://www.wpsitecare.com"
+msgstr "https://www.wpsitecare.com"
+
+#. Author of the plugin/theme
+msgid "WP Site Care"
+msgstr "WP Site Care"
+
+#. Description of the plugin/theme
+msgid "An ultra lightweight jQuery lightbox for WordPress images and galleries."
+msgstr "Una mesa de luz ligera en jQuery para las imágenes y galerías de WordPress."
+
+#. Plugin URI of the plugin/theme
+msgid "https://www.wpsitecare.com/wp-featherlight/"
+msgstr "https://www.wpsitecare.com/wp-featherlight/"
+
+#. Plugin Name of the plugin/theme
+msgid "WP Featherlight"
+msgstr "WP Featherlight"
+
+#: admin/views/meta-box.php:15
+msgid "Disable lightbox"
+msgstr "Desactivar mesa de luz"

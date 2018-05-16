@@ -1,0 +1,14 @@
+/*
+ * IE specific styles.
+ *
+ * @link http://keithclark.co.uk/articles/moving-ie-specific-css-into-media-blocks/
+ */
+
+@media screen\0 {
+	.nav-primary {
+		margin: 0 0 0 auto;
+	}
+	.header-widget-area {
+		margin-right: auto;
+	}
+}

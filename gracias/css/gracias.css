@@ -1,0 +1,79 @@
+@font-face {
+    font-family: Avenir LT Std\ 55 Roman;
+    font-style: normal;
+    font-weight: 400;
+    src: local("Avenir LT Std 55 Roman"), url(../fonts/AvenirLTStd-Roman.woff) format("woff")
+}
+@font-face {
+    font-family: Avenir LT Std\ 85 Heavy;
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/AvenirLTStd-Heavy.woff) format("woff")
+}
+
+
+body{
+  background:  url(../img/bg-treebox.png);
+  background-size: contain;
+  font-size: 16px;
+  height: 100%;
+}
+
+h1{
+  font-size: 1.625em;
+}
+
+header{
+  padding-top: 15px;
+}
+
+html{
+  height: 100%;
+}
+
+
+main{
+  background-size:contain;
+}
+
+footer{
+  padding: 3em 0;
+}
+footer p{
+  font-size: .8em;
+  padding: 2em 0  0;
+}
+
+.book {
+    font-family: Avenir LT Std\ 55 Roman, sans-serif
+}
+
+.container{
+  max-width: 960px;
+  margin: 0 auto;
+
+}
+.heavy {
+    font-family: Avenir LT Std\ 85 Heavy, sans-serif
+}
+
+
+
+.intro-illustration{
+  background: url(../img/zig-zag.svg) no-repeat center;
+  background-size: contain;
+  margin-top: 5px;
+  height: 15px;
+}
+
+.super-link {
+    border-bottom: 2px solid #fff100;
+    color: #000;
+    padding-bottom: 2px;
+}
+
+
+.super-link:hover{
+  background: #fff100;
+  color: #000;
+}

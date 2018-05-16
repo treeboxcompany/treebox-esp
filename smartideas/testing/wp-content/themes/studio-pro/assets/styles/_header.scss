@@ -1,0 +1,228 @@
+/* ## Site Header
+--------------------------------------------- */
+
+.site-header {
+    position: absolute;
+    width: 100%;
+    z-index: 100;
+    background-color: transparent;
+    @include transition;
+    .has-fixed-header & {
+        position: fixed;
+        &.shrink {
+            background-color: $accent;
+            box-shadow: 0 0 2rem rgba($dark,0.382);
+        }
+    }
+    >.wrap {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        @include breakpoint(md) {
+            padding: 0;
+            flex-wrap: nowrap;
+        }
+    }
+}
+
+
+/* ## Title Area
+--------------------------------------------- */
+
+.title-area {
+    margin: 0 auto 0 0;
+    position: relative;
+    height: 100%;
+    display: block;
+    flex: 1;
+    padding: 1em 0;
+    max-width: 20rem;
+    @include transition;
+    @include breakpoint(md) {
+        padding: 1.382em 0;
+    }
+    @include breakpoint(lg) {
+        padding: 1.618em 0;
+    }
+    .fixed-header .shrink & {
+        padding: 0.382em 0;
+    }
+    .wp-custom-logo & {
+        max-width: 10rem;
+        @include breakpoint(md) {
+            padding: 0;
+        }
+    }
+}
+
+.site-title {
+    font-size: 2rem;
+    font-family: $font-heading;
+    font-weight: $bold;
+    line-height: 1;
+    margin-bottom: 0;
+    @include breakpoint(md) {
+        font-size: 2.4rem;
+    }
+    a {
+        color: $white;
+        text-decoration: none;
+    }
+}
+
+.site-description {
+    font-size: 1rem;
+    margin-bottom: 0;
+    line-height: 1;
+    color: $white;
+    @include breakpoint(md) {
+        text-align: left;
+        font-size: 1.2rem;
+        line-height: 1.382;
+    }
+}
+
+
+/* ## Header Right
+--------------------------------------------- */
+
+.header-widget-area {
+    width: 100%;
+    opacity: 0;
+    margin-left: 1px;
+    transform: translateY(140%);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    padding: 1em 0;
+    position: relative;
+    z-index: 1;
+    @include breakpoint(md) {
+        width: auto;
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+    .activated & {
+        opacity: 1;
+        transform: translateY(0);
+        transition-delay: 0.82s;
+    }
+    .widget {
+        background-color: transparent;
+        @include breakpoint(md) {
+            margin-left: 1em;
+        }
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+    .simple-social-icons {
+        .alignright,
+        .aligncenter {
+            justify-content: flex-start;
+            float: left;
+            @include breakpoint(md) {
+                justify-content: flex-end;
+                float: right;
+            }
+        }
+        a {
+            background-color: transparent !important;
+        }
+    }
+}
+
+/* ## Custom Header
+--------------------------------------------- */
+
+.wp-custom-header {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+    .woocommerce & img,
+    img,
+    video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center center;
+    }
+    iframe {
+        top: -37.5%;
+        left: -37.5%;
+        right: -37.5%;
+        bottom: -37.5%;
+        margin: auto;
+        height: 175%;
+        width: 175%;
+        max-width: 175%;
+        max-height: none;
+        min-width: 100%;
+        min-height: 56.25vw; // 16:9 aspect ratio.
+        position: absolute;
+    }
+    img {
+        display: none;
+    }
+}
+
+.wp-custom-header-video-button {
+    display: none;
+}
+
+
+/* ## Page Header
+--------------------------------------------- */
+
+.page-header {
+    width: 100%;
+    margin: 0 auto;
+    padding: 14rem 0 7rem;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: $white;
+    text-align: center;
+    @include overlay;
+    @include breakpoint(md) {
+        padding: 17rem 0 8rem;
+    }
+    @include breakpoint(lg) {
+        padding: 19rem 0 10rem;
+    }
+    .has-nav-secondary & {
+        @include breakpoint(md) {
+            padding-top: 23rem;
+        }
+        @include breakpoint(lg) {
+            padding-top: 25rem;
+        }
+    }
+    .wrap {
+        position: relative;
+        z-index: 2;
+        max-width: map-get($breakpoints,sm);
+    }
+    h1 {
+        width: 100%;
+        margin-bottom: 0;
+        line-height: 1.236;
+    }
+    p {
+        width: 100%;
+        margin: 1em 0 0;
+    }
+    .widget {
+        background: transparent;
+    }
+}
+

@@ -1,0 +1,189 @@
+/* ## Site Containers
+--------------------------------------------- */
+
+.site-inner {
+	background-color: $white;
+}
+
+.wrap {
+	margin: 0 auto;
+	padding-left: 5%;
+	padding-right: 5%;
+	@include breakpoint(sm) {
+		width: 90%;
+		max-width: map-get($breakpoints, xl);
+		padding: 0;
+	}
+	.wrap {
+		max-width: 100%;
+		width: auto;
+		padding: 0;
+	}
+}
+
+.content-sidebar-wrap {
+	max-width: map-get($breakpoints, xl);
+	margin: 0 auto;
+	clear: both;
+	padding: 10vw 5vw;
+	word-wrap: break-word;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	@include breakpoint(sm) {
+		width: 90%;
+		max-width: map-get($breakpoints, xl);
+		padding: 6rem 0;
+	}
+	@include breakpoint(md) {
+		padding: 8rem 0;
+		flex-direction: row;
+		justify-content: space-between;
+		@include flexfix;
+		.sidebar-content & {
+			flex-direction: row-reverse;
+		}
+	}
+	.page-builder & {
+		padding: 0;
+		border-top: $site-border;
+		border-bottom: $site-border;
+	}
+}
+
+
+/* ## Content Widths and Positions
+--------------------------------------------- */
+
+@include breakpoint(md) {
+	.content {
+		width: map-get($breakpoints,sm);
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.sidebar-primary {
+		width: 25%;
+	}
+	.sidebar-content,
+	.content-sidebar {
+		.content {
+			width: calc(75% - 4rem);
+			margin-left: 0;
+			margin-right: 0;
+		}
+	}
+	.full-width-content {
+		.content {
+			width: 100%;				
+		}
+	}
+}
+
+
+/* ## Column Classes (including fifths)
+--------------------------------------------- */
+
+@include breakpoint(sm) {
+	.one-half,
+	.one-third,
+	.one-fourth,
+	.one-fifth,
+	.one-sixth,
+	.two-thirds,
+	.two-fourths,
+	.two-fifths,
+	.two-sixths,
+	.three-fourths,
+	.three-fifths,
+	.three-sixths,
+	.four-fifths, // Commish'.
+	.four-sixths,
+	.five-sixths {
+		float: left;
+		margin-left: $margin-left;
+	}
+	.one-half,
+	.three-sixths,
+	.two-fourths {
+		width: $one-half;
+	}
+	.one-third,
+	.two-sixths,
+	.gallery-columns-3 .gallery-item {
+		width: $one-third;
+	}
+	.four-sixths,
+	.two-thirds {
+		width: $two-thirds;
+	}
+	.one-fourth,
+	.gallery-columns-4 .gallery-item {
+		width: $one-fourth;
+	}
+	.three-fourths {
+		width: $three-fourths;
+	}
+	.one-fifth,
+	.gallery-columns-5 .gallery-item {
+		width: $one-fifth;
+	}
+	.two-fifths {
+		width: $two-fifths;
+	}
+	.three-fifths {
+		width: $three-fifths;
+	}
+	.four-fifths {
+		width: $four-fifths;
+	}
+	.one-sixth,
+	.gallery-columns-6 .gallery-item {
+		width: $one-sixth;
+	}
+	.five-sixths {
+		width: $five-sixths;
+	}
+	.first {
+		clear: both;
+		margin-left: 0;
+	}
+}
+
+
+/* ## Gallery
+--------------------------------------------- */
+
+.gallery,
+.gallery-row {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.gallery {
+	a {
+		display: block;
+		min-height: 100%;
+	}
+	img {
+		height: auto;
+		width: 100%;
+		display: block;
+		border-radius: $site-radius;
+	}
+}
+
+.gallery-caption {
+	display: block;
+}
+
+.gallery-item {
+	width: 100%;
+	margin: 0 0 5vw;
+	text-align: center;
+	display: block;
+	@include breakpoint(xs) {
+		width: $one-half;
+		margin-bottom: $margin-left;
+	}
+}

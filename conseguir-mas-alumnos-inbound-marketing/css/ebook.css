@@ -1,0 +1,374 @@
+@font-face {
+  font-family: Avenir LT Std\ 55 Roman;
+  font-style: normal;
+  font-weight: 400;
+  src: local("Avenir LT Std 55 Roman"), url(../fonts/AvenirLTStd-Roman.woff) format("woff"); }
+@font-face {
+  font-family: Avenir LT Std\ 85 Heavy;
+  font-style: normal;
+  font-weight: 400;
+  src: local("Avenir LT Std 85 Heavy"), url(../fonts/AvenirLTStd-Heavy.woff) format("woff"); }
+[type=color], [type=date], [type=datetime-local], [type=datetime], [type=email], [type=month], [type=number], [type=password], [type=search], [type=tel], [type=text], [type=time], [type=url], [type=week], textarea {
+  border: none;
+  border-bottom: 2px solid #000;
+  box-shadow: none;
+  color: #000;
+  font-family: Avenir LT Std\ 85 Heavy, sans-serif;
+  font-size: 1em;
+  margin: 0;
+  width: 100%;
+  padding: .2rem; }
+  [type=color]:focus, [type=date]:focus, [type=datetime-local]:focus, [type=datetime]:focus, [type=email]:focus, [type=month]:focus, [type=number]:focus, [type=password]:focus, [type=search]:focus, [type=tel]:focus, [type=text]:focus, [type=time]:focus, [type=url]:focus, [type=week]:focus, textarea:focus {
+    border: 0;
+    border-bottom: 2px solid #FFF100;
+    box-shadow: none;
+    outline: none;
+    outline-color: transparent; }
+
+body {
+  background: #FFF;
+  font-size: 16px; }
+
+blockquote {
+  border-left: 0;
+  font-family: Avenir LT Std\ 85 Heavy, sans-serif;
+  font-size: 1.4375em;
+  padding: 0; }
+  blockquote cite {
+    margin-top: 2.6em;
+    font-style: normal; }
+    blockquote cite:before {
+      content: ""; }
+
+footer {
+  padding-bottom: 2em; }
+  footer a {
+    color: #000; }
+  footer div {
+    margin: 0 auto; }
+  footer p {
+    font-size: 0.8em;
+    text-align: center;
+    margin: 0; }
+  footer .social {
+    display: block;
+    margin: 0 0 0 -6px;
+    padding-bottom: 2em;
+    text-align: center; }
+    footer .social li {
+      display: inline-flex;
+      font-size: 1em;
+      justify-content: space-around; }
+
+form label {
+  font-family: Avenir LT Std\ 85 Heavy, sans-serif;
+  line-height: 1;
+  margin-top: 2em; }
+form .button {
+  border: 2px solid #FFF100;
+  box-sizing: border-box;
+  display: inline-block;
+  margin-top: 2em;
+  width: 100%; }
+
+h1, h2, h3, h4 {
+  font-family: Avenir LT Std\ 85 Heavy, sans-serif; }
+
+h1, h2 {
+  font-size: 2rem; }
+
+h3 {
+  font-size: 1.3rem; }
+
+h4 {
+  font-size: 1rem; }
+
+header {
+  background: rgba(255, 255, 255, 0.9);
+  box-sizing: border-box;
+  max-height: 60px;
+  padding: 1em 0;
+  line-height: 1.5em;
+  position: fixed;
+  width: 100%; }
+
+main {
+  padding: 11% 0 8%; }
+  main h3 {
+    margin: 1.5em 0 -3px 0; }
+  main .button {
+    margin-top: 1em; }
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box; }
+  nav a {
+    color: #000; }
+  nav #logo-treebox {
+    display: block;
+    width: 142px;
+    height: 28px;
+    background: url(../img/treebox-logo.svg) no-repeat;
+    background-size: contain;
+    outline: none;
+    text-indent: -99999px;
+    margin: 0; }
+  nav #menu {
+    display: inline-flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0; }
+    nav #menu li {
+      display: inline-block;
+      font-family: Avenir LT Std\ 85 Heavy, sans-serif;
+      padding-right: 2em;
+      margin-top: 6px; }
+      nav #menu li:last-child {
+        padding-right: 0; }
+      nav #menu li a {
+        transition: 0.25s ease-out; }
+        nav #menu li a:hover {
+          background: transparent;
+          border-bottom: 2px solid #FFF100;
+          color: #000;
+          padding-bottom: 5px; }
+  nav #social-menu-share {
+    justify-content: flex-end;
+    margin: 0; }
+    nav #social-menu-share li {
+      display: inline-block; }
+
+p {
+  font-family: Avenir LT Std\ 55 Roman, sans-serif;
+  font-size: 1.125em; }
+  p strong {
+    font-family: Avenir LT Std\ 85 Heavy, sans-serif; }
+
+#inside-the-book {
+  padding: 4em 0 0; }
+  #inside-the-book ul {
+    padding-top: 1em; }
+    #inside-the-book ul li {
+      list-style-image: url("../img/check.svg");
+      padding-bottom: 2em; }
+
+#section-author {
+  padding: 6em 0; }
+  #section-author a {
+    color: #000;
+    font-size: 0.8em; }
+  #section-author h4 {
+    margin: 0; }
+  #section-author img {
+    border-radius: 100%; }
+  #section-author p {
+    font-size: 0.9rem; }
+  #section-author .authors {
+    box-sizing: border-box;
+    margin: 2em .4em 0 0;
+    max-width: 458px; }
+    #section-author .authors .author-info {
+      margin: 0; }
+    #section-author .authors:last-child {
+      margin-right: 0; }
+    #section-author .authors .only-one-author {
+      margin: 2em 1em 0 0;
+      display: flex;
+      justify-content: center; }
+
+#section-company {
+  background: url(../img/bg-yellow.png) no-repeat center;
+  background-size: contain;
+  height: 300px;
+  padding: 2em 0; }
+  #section-company .card {
+    text-align: center;
+    margin-top: -1.5em; }
+
+#section-testimonial {
+  background: #FFF100 url("../img/treebox-growth.png") no-repeat;
+  background-size: contain;
+  padding: 20em 0 4em;
+  min-height: 500px; }
+  #section-testimonial blockquote {
+    color: #000; }
+    #section-testimonial blockquote cite {
+      color: #000; }
+  #section-testimonial img {
+    border-radius: 100%; }
+  #section-testimonial .flex {
+    display: flex;
+    justify-content: center; }
+
+.button {
+  color: #000;
+  background-color: #FFF100;
+  border: 2px solid #FFF100;
+  display: inline-flex;
+  font-family: Avenir LT Std\ 85 Heavy, sans-serif;
+  font-size: 1em;
+  border-radius: 100px;
+  padding: 0.7rem 1.5rem;
+  margin-bottom: 0;
+  text-align: center; }
+  .button:focus, .button:hover {
+    background: transparent;
+    border: 2px solid #000;
+    color: #000; }
+
+.card {
+  background: #FFF;
+  box-sizing: border-box;
+  box-shadow: 0 18px 35px 0 rgba(50, 50, 93, 0.1);
+  border: 0;
+  border-radius: 6px;
+  padding: 2em; }
+
+.container {
+  box-sizing: border-box;
+  margin: 0 auto;
+  max-width: 1020px;
+  padding: 0 2%; }
+
+.fi-social-facebook, .fi-social-linkedin, .fi-social-twitter {
+  font-size: 1.3em;
+  margin-left: 3px; }
+
+.fi-x {
+  color: #000;
+  font-size: 1.4rem;
+  right: .3em;
+  top: 0em;
+  position: absolute; }
+
+.mauticform-errormsg {
+  color: #EF6954; }
+
+.author-unique {
+  float: none !important;
+  margin: 0 auto !important; }
+
+.reveal {
+  width: 64%;
+  padding: 2em; }
+  .reveal:focus {
+    outline: 0; }
+
+.small-text {
+  font-size: 1rem; }
+
+@media (max-width: 63em) {
+  h1 {
+    font-size: 1.5em;
+    margin: 0 0 .5em 0; }
+
+  h2, h3 {
+    font-size: 1.1em; }
+
+  header nav #menu, header nav #social-menu-share {
+    display: none; }
+  header nav #logo-treebox {
+    background-position: center;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    width: 120px; }
+
+  p {
+    font-size: 1em; }
+
+  #section-author .authors {
+    max-width: 100%; }
+
+  #section-testimonial {
+    padding: 12em 0 4em; }
+
+  .container {
+    padding: 0 4%; }
+
+  .reveal {
+    width: 100%;
+    position: relative;
+    padding: 6% 3%; }
+    .reveal h2 {
+      font-size: 1.4em; }
+    .reveal .no-mobile {
+      display: none; } }
+@media (max-width: 40em) {
+  blockquote {
+    font-size: 1.1rem;
+    text-align: center;
+    padding: 2em 1em; }
+
+  h1 {
+    font-size: 1.3em;
+    margin: 1.3em 0 1em; }
+
+  h3, .small-text {
+    display: none; }
+
+  h4 {
+    font-size: .9em;
+    margin-bottom: 0; }
+
+  main {
+    padding: 20% 0 10%; }
+    main div:first-child {
+      display: block;
+      margin: 0 auto;
+      float: none; }
+    main .button {
+      border: 2px solid #FFF100;
+      margin-top: 1.5em; }
+
+  #inside-the-book {
+    padding: 2em 0 4em 0; }
+
+  #section-author {
+    padding: 4em 0; }
+    #section-author h4 {
+      text-align: center; }
+    #section-author p {
+      text-align: center; }
+    #section-author .card {
+      padding: 1em; }
+
+  #section-company {
+    padding: 4em 0; }
+
+  #section-testimonial {
+    padding: 8em 0 2em; }
+    #section-testimonial .flex {
+      display: block; }
+      #section-testimonial .flex div {
+        clear: both;
+        float: none;
+        margin: 0 auto; }
+
+  .avatars {
+    display: block;
+    float: none;
+    margin: 0 auto;
+    padding: 0 0 2em 0; }
+
+  .button {
+    display: block;
+    width: 100%; }
+
+  .center {
+    clear: both;
+    display: block;
+    float: none !important;
+    margin: 0 auto; }
+
+  .reveal .button {
+    padding: 1.5em 0;
+    border-radius: 0;
+    bottom: 0;
+    left: 0;
+    position: fixed; }
+    .reveal .button:hover, .reveal .buttonfocus {
+      background: #FFF; } }
+
+/*# sourceMappingURL=ebook.css.map */

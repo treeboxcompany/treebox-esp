@@ -1,0 +1,391 @@
+/* ## Menus
+--------------------------------------------- */
+
+.menu {
+    width: 100%;
+    font-weight: $bolder;
+    font-size: 1.4rem;
+    line-height: 1;
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    position: relative;
+    @include clearfix;
+}
+
+.menu-item {
+    display: block;
+    padding: 0;
+    width: 100%;
+    position: relative;
+    @include breakpoint(md) {
+        display: inline-block;
+        padding: 0;
+        width: auto;
+    }
+    &.right {
+        margin-left: auto;
+    }
+    a {
+        text-decoration: none;
+        display: block;
+        padding: 0.5em 0;
+        color: $white;
+        @include transition;
+        @include breakpoint(md) {
+            padding: 1.6em 1em;
+        }
+        @include breakpoint(lg) {
+            padding: 1.82em 1.25em;
+        }
+        span {
+            position: relative;
+            display: block;
+            &:after {
+                content: '';
+                display: block;
+                width: 0px;
+                height: 2px;
+                position: absolute;
+                left: 0;
+                top: calc(100% + 0.2em);
+                background-color: $white;
+                @include transition;
+            }
+        }
+    }
+    a:hover span:after,
+    a:focus span:after,
+    &.current-menu-item>a span:after {
+        right: 0;
+        @include breakpoint(md) {
+            width: 100%;
+        }
+    }
+}
+
+
+/* ## Sub Menus
+--------------------------------------------- */
+
+.sub-menu {
+    display: none;
+    font-size: 1.6rem;
+    @include clearfix;
+    @include breakpoint(md) {
+        top: 100%;
+        position: absolute;
+        font-size: 1.4rem;
+        width: 16rem;
+        z-index: 99;
+        background-color: $white;
+        border-radius: $site-radius;
+        box-shadow: 0 2rem 2rem rgba($dark,0.15);
+        padding: 0.5em 0;
+    }
+    li {
+        width: 100%;
+        @include clearfix;
+        .nav-primary & {
+            transform: translateY(0);
+        }
+        .nav-primary.activated & {
+            transition: none;
+            transition-delay: 0s;
+        }
+        &:first-of-type {
+            @include breakpoint(md) {
+                margin-top: 0;
+                &:before {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    top: -1rem;
+                    left: 2rem;
+                    height: 1rem;
+                    width: 1rem;
+                    transform: rotate(45deg);
+                    background-color: $white;
+                }
+            }
+            a {
+                padding-left: 1em;
+            }
+        }
+    }
+    a {
+        padding: 1em;
+        @include breakpoint(md) {
+            padding: 1em;
+            position: relative;
+            word-wrap: break-word;
+            color: $dark;
+            width: 100%;
+        }
+        @include breakpoint(xl) {
+            padding: 1em;
+        }
+    }
+    .sub-menu {
+        padding-left: 1em;
+        @include breakpoint(md) {
+            margin: -0.1rem 0 0 19.9rem;
+            padding-left: 0;
+            left: -0.1rem;
+            top: -0.5em;
+            border: $site-border;
+        }
+    }
+}
+
+
+/* ## Specific Menus
+--------------------------------------------- */
+
+.nav-primary {
+    margin: 0;
+    padding: 10vh 15vw 15vh 10vw;
+    background-color: $dark;
+    position: fixed;
+    right: -100%;
+    top: 0;
+    bottom: 0;
+    height: 100vh;
+    width: 80vw;
+    max-width: 40rem;
+    transition: all 0.75s cubic-bezier(0, 1, 0.618, 1);
+    transition-delay: 0.382s;
+    top: 0;
+    bottom:0;
+    position:fixed;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    overflow-scrolling: touch;
+    @include breakpoint(md) {
+        border: none;
+        position: relative;
+        right: auto;
+        width: auto;
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0;
+        padding: 0;
+        background: transparent;
+        overflow: visible;
+    }
+    &.activated {
+        right: 0;
+        @include breakpoint(md) {
+            right: calc(0 - 5rem);
+        }
+        .menu-item {
+            opacity: 1;
+            transform: translateY(0);
+            transition-delay: 0.82s;
+        }
+    }
+    .no-js & {
+        width: 100%;
+        position: relative;
+        display: block;
+        @include breakpoint(md) {
+            display: block;
+            width: auto;
+        }
+        .wrap {
+            padding: 0 5%;
+        }
+        .menu-item {
+            display: inline-block;
+            width: auto;
+            margin: 0 0.5em;
+        }
+    }
+    .wrap {
+        width: 100%;
+        position: relative;
+        z-index: 1;
+    }
+    .menu {
+        padding: 0;
+        font-family: $font-heading;
+        font-size: 2.4rem;
+        @include breakpoint(md) {
+            padding: 0;
+            font-family: $font-body;
+            font-size: 1.4rem;
+        }
+    }
+    .menu-item {
+        opacity: 0;
+        transform: translateY(140%);
+        transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+        position: relative;
+        @include breakpoint(md) {
+            opacity: 1;
+            transform: none;
+            transition: none;
+            overflow: visible;
+        }
+        a {
+            float: left;
+        }
+    }
+}
+
+.nav-secondary {
+    width: 100%;
+    @include breakpoint(md) {
+        width: 100%;
+        border-top: $site-border;
+    }
+}
+
+.site-footer {
+    .menu {
+        margin-bottom: 1em;
+        @include breakpoint(sm) {
+            margin-bottom: 0;
+        }
+    }
+    .menu-item {
+        width: 50%;
+        @include breakpoint(sm) {
+            width: 100%;
+        }
+        a {
+            margin: 0 0 0.5em;
+            color: $dark;
+            @include breakpoint(sm) {
+                padding: 0;
+                margin: 0 0 1.618em;
+            }
+            &:hover {
+                color: $accent;
+            }
+        }
+    }
+}
+
+
+/* ## Menu Toggles
+--------------------------------------------- */
+
+.menu-toggle {
+    padding: 2.7rem 0;
+    cursor: pointer;
+    background-color: transparent;
+    box-shadow: none;
+    display: block;
+    position: absolute;
+    top: 2rem;
+    padding: 0;
+    right: 5%;
+    line-height: 0;
+    height: 3rem;
+    width: auto;
+    letter-spacing: -1em;
+    color: transparent;
+    z-index: 999;
+    transition: none;
+    @include breakpoint(sm) {
+        right: 0;
+    }
+    @include breakpoint(md) {
+        display: none;
+    }
+    &:hover,
+    &:focus {
+        background: none;
+        outline: none;
+        box-shadow: none;
+        color: transparent;
+    }
+    &.activated {
+        position: fixed;
+        right: 5vw;
+        span,
+        span:before,
+        span:after {
+            background-color: $white;
+        }
+        @include breakpoint(1420px) {
+            right: calc(50vw - 640px);
+        }
+    }
+    span {
+        display: block;
+        position: relative;
+        height: 0.2rem;
+        background: $white;
+        transition: background 0s 0.4s;
+        width: 2.5rem;
+        margin: 0;
+        border-radius: $site-radius;
+        &::before,
+        &::after {
+            position: absolute;
+            display: block;
+            left: 0;
+            width: 100%;
+            height: 0.2rem;
+            background-color: $white;
+            border-radius: $site-radius;
+            content: " ";
+        }
+        &::before {
+            top: -0.7rem;
+            transition: top 0.4s 0.4s, transform 0.4s 0s, background-color 0.82s 0.1s;
+        }
+        &::after {
+            bottom: -0.7rem;
+            transition: bottom 0.4s 0.4s, transform 0.4s 0s, background-color 0.82s 0.1s;
+        }
+    }
+    &.activated span {
+        background: none;
+        &::before {
+            top: 0;
+            transform: rotate(135deg);
+            transition: top 0.4s 0s, transform 0.4s 0.4s, background-color 0.82s 0.1s;
+        }
+        &::after {
+            bottom: 0;
+            transform: rotate(-135deg);
+            transition: bottom 0.4s 0s, transform 0.4s 0.4s, background-color 0.82s 0.1s;
+        }
+    }
+}
+
+.sub-menu-toggle {
+    position: absolute;
+    right: 0;
+    top: 0.333em;
+    background: none;
+    padding: 1em;
+    margin: 0 -1em;
+    box-shadow: none;
+    @include breakpoint(md) {
+        display: none;
+    }
+    &:hover,
+    &:focus {
+        background: none;
+    }
+    &:before {
+        content: "";
+        display: block;
+        margin: 0.4rem 0 -0.4rem;
+        border: 0.4rem solid transparent;
+        border-top-color: $white;
+    }
+    &.activated {
+        &:before {
+            transform: rotate(180deg);
+            margin: -0.4rem 0 0.4rem;
+        }
+    }
+}
